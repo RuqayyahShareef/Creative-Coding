@@ -13,6 +13,7 @@ class NapEvent
   boolean caffeine; // Did I drink caffeine that day? Yes(true)/No(false).
   float nightSleep; // How many hours did I sleep that preceeding night?
   
+  
  
   // 'constructor' method is called when we instantiate a new 'NapEvent' object and initialises its state.
   // accepts an array of tokens from one line of the text file.
@@ -27,8 +28,6 @@ class NapEvent
     caffeine = determineBooleanValue(napTokensArray[6]); 
     nightSleep = float(napTokensArray[7]); // convert number of hours slept into a float value
   }
-  
-  
   
   
   // method to convert the 'time' value passed in as an argument, to an integer value showing where on a 24-hour scale (0 - 24*60) in minutes that time falls.
@@ -49,10 +48,5 @@ class NapEvent
     }
     return result;
   }
-  
-  /*void printNapInfo(){
-    println(day, nightSleep, caffeine);
-  }*/
  
-
 }
